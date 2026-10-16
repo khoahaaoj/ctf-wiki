@@ -1,7 +1,7 @@
 site_name: CTF Wiki
 site_description: Wiki CTF tiếng Việt
-# site_url: https://USERNAME.github.io/REPO/
-# repo_url: https://github.com/USERNAME/REPO
+site_url: https://khoahaaoj.github.io/ctf-wiki/
+repo_url: https://github.com/khoahaaoj/ctf-wiki
 
 theme:
   name: material
