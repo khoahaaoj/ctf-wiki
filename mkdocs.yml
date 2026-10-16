@@ -1,0 +1,55 @@
+site_name: CTF Wiki
+site_description: Wiki CTF tiếng Việt
+# site_url: https://USERNAME.github.io/REPO/
+# repo_url: https://github.com/USERNAME/REPO
+
+theme:
+  name: material
+  language: vi
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Chế độ tối
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Chế độ sáng
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Trang chủ: index.md
+  - Lộ trình Pwn:
+    - Tổng quan: pwn/index.md
+    - "Stage 0 – Nền tảng": pwn/stage-0-nen-tang.md
+    - "Stage 1 – Asm và công cụ": pwn/stage-1-asm-cong-cu.md
+    - "Stage 2 – Stack overflow cơ bản": pwn/stage-2-stack-overflow.md
+    - "Stage 3 – Shellcode và ROP": pwn/stage-3-shellcode-rop.md
+    - "Stage 4 – Format string": pwn/stage-4-format-string.md
+    - "Stage 5 – Stack nâng cao": pwn/stage-5-stack-nang-cao.md
+    - "Stage 6 – Heap": pwn/stage-6-heap.md
+    - "Stage 7 – Heap nâng cao và hardening hiện đại": pwn/stage-7-heap-nang-cao.md
+    - "Stage 8 – Mở rộng": pwn/stage-8-mo-rong.md
